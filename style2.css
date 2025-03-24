@@ -1,0 +1,20 @@
+ .box {
+            border: 5px solid blue;
+            padding: 20px;
+            width: 300px;
+        }
+        .rounded {
+            border: 3px dashed red;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .dotted-border {
+            border: 4px dotted green;
+            padding: 10px;
+            width: 300px;
+        }
+        .solid-green {
+            border: 1px solid green;
+            padding: 5px;
+            width: 300px;
+        }
