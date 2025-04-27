@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* Header */
+.header {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Layout */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Zona principală stânga */
+.main-left {
+    flex: 1 1 45%;
+}
+
+/* Zona dreapta - carduri */
+.main-right {
+    flex: 1 1 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Stiluri comune pentru boxuri/carduri */
+.box, .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover, .box:hover {
+    transform: translateY(-5px);
+}
+
+/* Linkuri */
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Culori tematice */
+.card.stiinta {
+    background-color: #ffe6e6;
+    border-left: 6px solid #cc0000;
+}
+
+.card.arta {
+    background-color: #ffe6f0;
+    border-left: 6px solid #ff0066;
+}
+
+.card.sport {
+    background-color: #e6ffe6;
+    border-left: 6px solid #33cc33;
+}
+
+.card.tehnologie {
+    background-color: #f3e6ff;
+    border-left: 6px solid #9900cc;
+}
+
+.card.stiinta a {
+    color: #cc0000;
+}
+.card.arta a {
+    color: #ff0066;
+}
+.card.sport a {
+    color: #33cc33;
+}
+.card.tehnologie a {
+    color: #9900cc;
+}
+
+/* Footer */
+.footer {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main-right {
+        grid-template-columns: 1fr;
+    }
+}/* Stilizare navbar cu chenar roșu */
+.navbar {
+    background-color: #cc0000;
+    padding: 10px 0;
+    border-radius: 10px;  /* Colțuri rotunjite */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #b30000;  /* Culoare la hover */
+    transform: scale(1.1);  /* Efect de zoom la hover */
+}navbar {
+    background-color: #cc0000;
+    padding: 10px 0;
+    border-radius: 10px;  /* Colțuri rotunjite */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style-type: none;  /* Eliminăm bullet points */
+    display: flex;
+    gap: 15px;  /* Distanță între linkuri */
+}
+
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #b30000;  /* Culoare la hover */
+    transform: scale(1.1);  /* Efect de zoom la hover */
+}
+
+/* Dacă ai imagini în interiorul unui link, adăugăm un stil specific */
+.navbar-links a img {
+    width: 30px;  /* Setăm dimensiunea imaginii */
+    height: auto;  /* Păstrăm proporțiile corecte */
+    vertical-align: middle;  /* Aliniem imaginea la linia textului */
+}
